@@ -4,14 +4,14 @@ package shapes;
  * Класс Circle представляет круг с заданным радиусом.
  */
 public class Circle extends Figure {
-    private double r;
+    private double radius;
 
     /**
      * Конструктор для круга.
      * @param radius радиус круга
      */
     public Circle(double radius) {
-        this.r = radius;
+        this.radius = radius;
     }
 
     /**
@@ -20,6 +20,6 @@ public class Circle extends Figure {
      */
     @Override
     public double getArea() {
-        return Math.PI * r * r;
+        return Math.PI * radius * radius;
     }
 }
